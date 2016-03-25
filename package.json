@@ -1,7 +1,7 @@
 {
   "name": "node-jsdifflib",
   "version": "1.0.5",
-  "description": "A diff library to compare text differences between two texts. This is a fork of [cemerick/jsdifflib] which has been adapted to render the HTML on the server.",
+  "description": "A diff library to compare text differences between two texts.",
   "main": "index.js",
   "directories": {
     "test": "test"
