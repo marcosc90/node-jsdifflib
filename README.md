@@ -19,10 +19,11 @@ diff(baseText, newText[, options])
 ```
 
 **options**
-⋅⋅⋅ **baseTextName:** the title to be displayed above the base text listing in the diff view; [default="Base Text"]
-⋅⋅⋅ **newTextName:** the title to be displayed above the new text listing in the diff view; [default="New Text"]
-⋅⋅⋅ **contextSize:** the number of lines of context to show around differences; by default, all lines are shown
-⋅⋅⋅ **viewType:** if 0, a side-by-side diff view is generated (default); if 1, an inline diff view is generated
+
+- **baseTextName:** the title to be displayed above the base text listing in the diff view; [default="Base Text"]
+- **newTextName:** the title to be displayed above the new text listing in the diff view; [default="New Text"]
+- **contextSize:** the number of lines of context to show around differences; by default, all lines are shown
+- **viewType:** if 0, a side-by-side diff view is generated (default); if 1, an inline diff view is generated
 
 ## Style
 
