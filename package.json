@@ -1,0 +1,29 @@
+{
+  "name": "node-jsdifflib",
+  "version": "1.0.0",
+  "description": "A diff library to compare text differences between two texts. This is a fork of [cemerick/jsdifflib] which has been adapted to render the HTML on the server.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "jsdom": "^8.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcosc90/node-jsdifflib.git"
+  },
+  "keywords": [
+    "jsdifflib",
+    "diffchecker",
+    "\"text",
+    "difference\""
+  ],
+  "author": "Marcos Casagrande <=>",
+  "license": "BSD-2-Clause",
+  "homepage": "https://github.com/marcosc90/node-jsdifflib#readme"
+}
