@@ -11,7 +11,7 @@ http.createServer(function(req, res){
 
 	res.end(`<html>
 		<head>
-			<link rel="stylesheet" href="https://gitcdn.link/repo/marcosc90/node-jsdifflib/master/assets/diffview.css" />
+			<link rel="stylesheet" href="https://cdn.rawgit.com/marcosc90/node-jsdifflib/master/assets/jsdifflib.css" />
 		</head>
 		<body>
 			${output}
