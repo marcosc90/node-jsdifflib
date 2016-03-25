@@ -1,4 +1,4 @@
-# jsdifflib
+# node-jsdifflib
 
 A diff library to compare text differences between two texts. This is a fork of <a href="https://github.com/cemerick/jsdifflib">cemerick/jsdifflib</a> which has been adapted to render the HTML on the server.
 
@@ -29,7 +29,7 @@ diff(baseText, newText[, options])
 
 jsdifflib comes with a ready to use CSS file (assets/jsdifflib.css) or you can use a custom one.
 
-## Example
+## Examplemar
 
 ```js
 const http = require("http");
