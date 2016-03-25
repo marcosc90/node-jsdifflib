@@ -1,6 +1,6 @@
 # jsdifflib
 
-A diff library to compare text differences between two texts. This is a fork of [cemerick/jsdifflib](https://github.com/cemerick/jsdifflib) which has been adapted to render the HTML on the server.
+A diff library to compare text differences between two texts. This is a fork of <a href="https://github.com/cemerick/jsdifflib">cemerick/jsdifflib</a> which has been adapted to render the HTML on the server.
 
 ## Installation
 
@@ -12,6 +12,17 @@ jsdifflib is a Javascript library that provides:
 
 1. A partial reimplementation of Python’s difflib module (specifically, the SequenceMatcher class)
 2. A visual diff view generator, that offers side-by-side as well as inline formatting of file data
+
+## API
+```js
+diff(baseText, newText[, options])
+```
+
+**options**
+⋅⋅⋅ **baseTextName:** the title to be displayed above the base text listing in the diff view; [default="Base Text"]
+⋅⋅⋅ **newTextName:** the title to be displayed above the new text listing in the diff view; [default="New Text"]
+⋅⋅⋅ **contextSize:** the number of lines of context to show around differences; by default, all lines are shown
+⋅⋅⋅ **viewType:** if 0, a side-by-side diff view is generated (default); if 1, an inline diff view is generated
 
 ## Style
 
