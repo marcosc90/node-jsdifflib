@@ -1,6 +1,6 @@
 {
   "name": "node-jsdifflib",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A diff library to compare text differences between two texts.",
   "main": "index.js",
   "directories": {
