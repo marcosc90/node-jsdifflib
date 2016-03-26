@@ -9,15 +9,15 @@ http.createServer(function(req, res){
 
  	res.writeHead(200, {'Content-Type': 'text/html'});
 
-	res.end(`<html>
-		<head>
-			<link rel="stylesheet" href="https://cdn.rawgit.com/marcosc90/node-jsdifflib/master/assets/jsdifflib.css" />
-		</head>
-		<body>
-			${output}
-		</body>
-	</html>`);
+	res.end("<html>" +
+		"<head>" +
+			'<link rel="stylesheet" href="https://gitcdn.link/repo/marcosc90/node-jsdifflib/master/assets/diffview.css" />'+
+		"</head>" +
+		"<body>" +
+			output +
+		"</body>"+
+	"</html>");
 
-}).listen(8082, function(){
+}).listen(8081, function(){
 	console.log("Server started at: http://localhost:8081");
 });
