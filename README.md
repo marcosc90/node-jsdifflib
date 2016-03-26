@@ -24,10 +24,13 @@ diff(baseText, newText[, options])
 
 **options**
 
-- **baseTextName:** the title to be displayed above the base text listing in the diff view; [default="Base Text"]
-- **newTextName:** the title to be displayed above the new text listing in the diff view; [default="New Text"]
-- **contextSize:** the number of lines of context to show around differences; by default, all lines are shown
-- **viewType:** if 0, a side-by-side diff view is generated (default); if 1, an inline diff view is generated
+- **baseTextName:** [string] the title to be displayed above the base text listing in the diff view [default="Base Text"]
+- **newTextName:** [string] the title to be displayed above the new text listing in the diff view [default="New Text"]
+- **contextSize:** [int] the number of lines of context to show around differences; by default, all lines are shown
+- **inline:** [boolean] if false, a side-by-side diff view is generated (default); if true, an inline diff view is generated
+- **colgroup:** [object/boolean] whether to add colgroup tag to table [default = false]
+ - **th:** [int] The width (%) of th elements (lines) [default=5]
+ - **td:** [int] The width (%) of td elements (content) [default=45]
 
 ## Style
 
@@ -43,18 +46,24 @@ const baseFile = "console.log(5);"
 const newFile = "\"use strict\";\nconsole.log(5);";
 
 http.createServer(function(req, res){ 
-  var output = diff(baseFile, newFile);
+  
+    if (req.url === '/favicon.ico') {
+      res.writeHead(200, {'Content-Type': 'image/x-icon'} );
+      return res.end();
+    }
 
-  res.writeHead(200, {'Content-Type': 'text/html'});
+    var output = diff(baseFile, newFile);
 
-  res.end(`<html>
-    <head>
-      <link rel="stylesheet" href="https://cdn.rawgit.com/marcosc90/node-jsdifflib/master/assets/jsdifflib.css" />
-    </head>
-    <body>
-      ${output}
-    </body>
-  </html>`);
+    res.writeHead(200, {'Content-Type': 'text/html'});
+
+    res.end(`<html>
+      <head>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/marcosc90/node-jsdifflib/master/assets/jsdifflib.css" />
+      </head>
+      <body>
+        ${output}
+      </body>
+    </html>`);
 
 }).listen(8081, function(){
   console.log("Server started at: http://localhost:8081");

@@ -32,14 +32,7 @@ module.exports = function(baseText, newText, options) {
 		opcodes: opcodes,
 	};
 	
-	var defaults = {
-		baseTextName: "Base Text",
-		newTextName: "New Text",
-		contextSize: null,
-		viewType: 0, //side by side,  1 = inline
-	};
-
-	options = merge(defaults, options || {}, settings);
+	options = merge(options || {}, settings);
 
 	return diffview.buildView(options);
 };
