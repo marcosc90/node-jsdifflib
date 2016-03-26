@@ -17,7 +17,7 @@ http.createServer(function(req, res){
 
 	res.end("<html>" +
 		"<head>" +
-			'<link rel="stylesheet" href="https://cdn.rawgit.com/marcosc90/node-jsdifflib/master/assets/jsdifflib.css" />'+
+			'<link rel="stylesheet" href="https://cdn.rawgit.com/marcosc90/node-jsdifflib/8838a6401c6933ca3faa1085bc1ec9b8174a6db8/assets/jsdifflib.css" />'+
 		"</head>" +
 		"<body>" +
 			output +
