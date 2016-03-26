@@ -29,8 +29,8 @@ diff(baseText, newText[, options])
 - **contextSize:** [int] the number of lines of context to show around differences; by default, all lines are shown
 - **inline:** [boolean] if false, a side-by-side diff view is generated (default); if true, an inline diff view is generated
 - **colgroup:** [object/boolean] whether to add colgroup tag to table [default = false]
- - **th:** [int] The width (%) of th elements (lines) [default=5]
- - **td:** [int] The width (%) of td elements (content) [default=45]
+  - **th:** [int] The width (%) of th elements (lines) [default=5]
+  - **td:** [int] The width (%) of td elements (content) [default=45]
 
 ## Style
 
