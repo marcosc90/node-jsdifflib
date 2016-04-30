@@ -1,5 +1,3 @@
-var http = require("http");
-var fs = require("fs");
 var diffview = require("./lib/diffview");
 var difflib = require("./lib/difflib");
 
